@@ -8,13 +8,12 @@ public class User {
 
     private String mFirstName;
 
+    /* Getter & Setter */
     public String getFirstName() {
         return mFirstName;
     }
-
     public void setFirstName(String firstName) {
         mFirstName = firstName;
     }
-
 
 }
