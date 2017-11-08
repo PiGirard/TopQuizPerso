@@ -2,6 +2,7 @@ package com.example.pierrickgirard.topquiz.controller;
 
 import com.example.pierrickgirard.topquiz.R;
 import com.example.pierrickgirard.topquiz.model.User;
+import com.facebook.stetho.Stetho;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -36,6 +37,9 @@ public class MainActivity extends AppCompatActivity {
         System.out.println("MainActivity::onCreate()");
 
         super.onCreate(savedInstanceState);
+
+        /* To test Stetho */
+        Stetho.initializeWithDefaults(this);
 
         /* Set up the layout */
         setContentView(R.layout.activity_main);
